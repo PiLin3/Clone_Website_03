@@ -1,0 +1,328 @@
+body {
+  background-color: #e9e7e7;
+  font-family: 'Cardo', serif;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.wrapper {
+  margin: 0 5%;
+}
+/*Main Header*/
+header.wrapper {
+  margin-top: 3%;
+}
+.main-nav ul {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.main-nav li {
+  width: clamp(2.8rem, 6vw, 20rem);
+}
+header a {
+  text-align: center;
+  color: #656568;
+  font-family: 'Cardo', serif;
+  font-size: clamp(1em, 1.25vw, 5rem);
+  font-weight: 400;
+}
+.contact-btn {
+  display: none;
+}
+header a:hover {
+  color: black;
+  font-weight: 700;
+}
+.contact-btn:hover {
+  color: #ededed;
+  background-color: #656568;
+}
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+  margin:  0 0 1rem 0;
+}
+/*THE LEAD BANNER STYLES*/
+.m-banner {
+  padding-bottom: 16vw;
+  background-image: url(images/banner-decoration-l.jpg), url(images/banner-decoration-r.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 100%, 100% 100%;
+}
+.lead-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0px;
+}
+.banner-overlay h1 {
+  font-weight: 700;
+  font-size: clamp(2em, 5vw, 4em);
+  line-height: 1em;
+  text-align: center;
+  max-width: 80%;
+  margin: 0.75em auto;
+}
+.banner-overlay p {
+  font-weight: bold;
+  font-size: clamp(0.75em, 2vw, 1.1em);
+  text-align: center;
+  margin: 0 0 clamp(2vw,3.5vw,8vw) 0;
+}
+.banner-overlay a {
+  display: block;
+  background-color: #232323;
+  color: #e9e7e7;
+  text-align: center;
+  font-size: clamp(1em, 3vw,1.75em);
+  font-weight: bold;
+  width: 7em;
+  padding: 0.3em 1.25em;
+  margin: 1em auto 1.5em;
+  border-radius: 0.15em;
+}
+.banner-overlay a:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.img-container {
+  flex: 1;
+}
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+/*SECTIONS STYLES*/
+
+/*SECTION--1*/
+
+.sc-1 {
+  background-image: url(images/SC-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 0;
+}
+.sc-1 div {
+  color: #e9e7e7;
+  width: clamp(14em, 40vw, 80em);
+  margin: 0 auto;
+}
+.sc-1 h2 {
+  font-size: clamp(1.7em, 5vw, 10em);
+  text-align: center;
+  line-height: 1em;
+  margin: 0;
+}
+.sc-1 p {
+  font-size: clamp(1em, 1.1vw, 6em);
+  text-align: center;
+  line-height: 1.2em;
+  margin: 1em 0 2.5em;
+}
+.sc-1 a {
+  display: block;
+  width: 8em;
+  text-align: center;
+  font-weight: 400;
+  color: #e9e7e7;
+  background-color: #232323;
+  border: 0.1em solid #e9e7e7;
+  margin: 0 auto;
+  padding: 0.6em 2.2em;
+  border-radius: 0.2em;
+}
+.sc-1 a:hover {
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*SECTION--2*/
+.sc-2 {
+  padding: 2rem 0 0;
+  background-image: url(images/mc-decoration-l.jpg), url(images/mc-decoration-r.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0, 100% 100%;
+}
+
+.sc-2-container img {
+  width: 100%;
+  height: auto;
+}
+.sc-2-container div {
+  padding: 0;
+  border: 0;
+  margin: 0 1.5em 4em;
+}
+.sc-2-container h3 {
+  color: #232323;
+  font-weight: bold;
+  font-size: clamp(1em, 6vw,2em);
+  line-height: 1em;
+  width: 6.5em;
+  margin: 0.5em auto;
+}
+.sc-2-container p {
+  color: #232323;
+  font-weight: bold;
+  font-size: clamp(0.8em, 1.5vw, 2em);
+  line-height: 1em;
+  margin-top: 0;
+  text-align: center;
+}
+/*THE FOOTER STYLES*/
+
+footer {
+  background-color: #c4c4c4;
+  padding-top: 0;
+  padding-bottom: 5em;
+  background-image: url(images/fr-decoration.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+}
+footer h2 {
+  float: left;
+  color: #232323;
+  font-weight: bold;
+  font-size: clamp(1.5em, 5vw, 2.5em);
+  width: 4em;
+  line-height: 1em;
+  text-align: center;
+  margin: 2rem 1.2em 0 0;
+}
+footer p {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom:1.5em;
+}
+.f-clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.f-container ul {
+  list-style: none;
+  text-align: left;
+  padding-inline-start: 0;
+}
+.f-container ul p {
+  display: none;
+}
+.f-container ul:nth-child(3) {
+  display: none;
+}
+.f-container li {
+  font-weight: bold;
+  line-height: 2.25em;
+}
+footer div.wrapper > p{
+  text-align: center;
+  text-shadow: 0.1em 0.1em rgb(228, 228, 228);
+  margin: 2.5em 0 0 0;
+}
+
+.f-container a {
+  color: #232323;
+  text-align: left;
+}
+.f-container a:hover {
+  color: rgb(87, 87, 87);
+  font-weight: 700;
+}
+footer div.wrapper > a {
+  color: #232323;
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 600px) {
+  .main-nav ul {
+    margin-top: 1.5rem;
+    display: block;
+  }
+  .main-nav li {
+    float: left;
+    width: clamp(2.8rem, 6vw, 20rem);
+    margin: 0 5% 0 0;
+  }
+  .contact-btn {
+    display: inline;
+    float: right;
+    width: 6em;
+    padding: 0.15em 0.6em;
+    border: 0.125em solid black;
+    border-radius: 0.25em;
+    text-align: center;
+  }
+
+  header::after {
+    margin:  0 0 3rem 0;
+  }
+  .lead-banner {
+    flex-direction: row;
+  }
+  .banner-overlay {
+    margin-right: clamp(1em, 10vw, 20em);
+    width: clamp(8em, 30vw, 24em);
+  }
+  .banner-overlay h1 {
+    max-width: 100%;
+    margin: 0 0 clamp(2vw,3.5vw,8vw) 0;
+    text-align: left;
+  }
+  .banner-overlay p {
+    text-align: left;
+  }
+  .banner-overlay a {
+    margin: 0;
+  }
+  .f-clear::after{
+    clear: none;
+  }
+  .f-container ul p {
+    display: block;
+  }
+}
+@media screen and (min-width: 868px) {
+  .sc-2-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sc-2 {
+    padding: 5rem 0;
+  }
+  .sc-2-container div {
+    padding: 0;
+    border: 0;
+    margin: 0 1.5em;
+  }
+  .sc-2-container h3 {
+    margin: 1em 0;
+  }
+  .sc-2-container p {
+    text-align: left;
+  }
+  footer {
+    padding-top: 2.5em;
+  }
+  .f-container ul:nth-child(3) {
+    display: block;
+  }
+}
